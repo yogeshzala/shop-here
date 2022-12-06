@@ -1,1 +1,22 @@
-<p>menubar works!</p>
+<p-menubar>
+  <ng-template pTemplate="start">
+    <img src="../assets/logo.png" height="40" routerLink="/" />
+  </ng-template>
+  <ng-template pTemplate="end">
+    <button
+      pButton
+      type="button"
+      label="Login"
+      class="p-button-info"
+      icon="pi pi-sign-in"
+      routerLink="/login"
+    ></button>
+    <!-- <button
+      pButton
+      type="button"
+      label="Logout"
+      class="p-button-info"
+      icon="pi pi-sign-out"
+    ></button> -->
+  </ng-template>
+</p-menubar>

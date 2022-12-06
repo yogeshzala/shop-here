@@ -9,6 +9,8 @@ import { LoginComponent } from './login/login.component';
 import { LoderComponent } from './loder/loder.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MenubarModule } from 'primeng/menubar';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoginComponent,
     LoderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MenubarModule,
+    ButtonModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
