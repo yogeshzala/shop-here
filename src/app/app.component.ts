@@ -7,9 +7,15 @@ import { PrimeNGConfig } from 'primeng/api';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  isLoading: boolean;
+
   constructor(private primengConfig: PrimeNGConfig) {}
 
   ngOnInit(): void {
     this.primengConfig.ripple = true;
+  }
+
+  loading(value: boolean) {
+    this.isLoading = value;
   }
 }

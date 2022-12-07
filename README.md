@@ -1,3 +1,3 @@
-<img src="src/assets/logo.png" width=400>
+<img src="src/assets/logo.png" width=300>
 
 <hr>

@@ -1,8 +1,13 @@
 <div>
-  <div>
-    <app-menubar></app-menubar>
+  <div [hidden]="!isLoading">
+    <app-loader></app-loader>
   </div>
-  <div>
-    <router-outlet></router-outlet>
+  <div [hidden]="isLoading">
+    <div>
+      <app-menubar></app-menubar>
+    </div>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>
