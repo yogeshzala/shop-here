@@ -14,8 +14,15 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { HttpClientModule } from '@angular/common/http';
-
+import { DataViewModule } from 'primeng/dataview';
+import { DropdownModule } from 'primeng/dropdown';
+import { RatingModule } from 'primeng/rating';
+import { FormsModule } from '@angular/forms';
+import { PanelModule } from 'primeng/panel';
+import { DialogModule } from 'primeng/dialog';
+import { RippleModule } from 'primeng/ripple';
 import { CardModule } from 'primeng/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,9 +38,16 @@ import { CardModule } from 'primeng/card';
     MenubarModule,
     ButtonModule,
     InputTextModule,
-    CardModule,
     ProgressSpinnerModule,
     HttpClientModule,
+    DataViewModule,
+    DropdownModule,
+    RatingModule,
+    FormsModule,
+    PanelModule,
+    DialogModule,
+    RippleModule,
+    CardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
