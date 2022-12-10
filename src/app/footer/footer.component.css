@@ -1,0 +1,15 @@
+.footer {
+  margin-top: 20px;
+  padding: 1rem;
+  background: #1e1e1e;
+  color: rgba(255, 255, 255, 0.87);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  text-align: center;
+  padding: 27px 0 27px 0;
+}
+
+.icon {
+    width: 25px;
+    margin-bottom: -6px;
+}
