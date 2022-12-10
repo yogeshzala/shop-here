@@ -3,11 +3,11 @@
     #dv
     [value]="products"
     [paginator]="true"
-    [rows]="9"
+    [rows]="5"
     filterBy="title"
     [sortField]="sortField"
     [sortOrder]="sortOrder"
-    layout="grid"
+    layout="list"
   >
     <ng-template pTemplate="header">
       <div class="flex flex-column md:flex-row md:justify-content-between">
@@ -28,7 +28,6 @@
             (input)="dv.filter(value)"
           />
         </span>
-        <p-dataViewLayoutOptions></p-dataViewLayoutOptions>
       </div>
     </ng-template>
     <ng-template let-product pTemplate="listItem">
@@ -39,7 +38,7 @@
             <div class="product-name">{{ product.title }}</div>
             <div class="product-description">{{ product.description }}</div>
             <p-rating
-              [ngModel]="product.rating"
+              [ngModel]="product.rating.rate"
               [readonly]="true"
               [cancel]="false"
             ></p-rating>
@@ -49,32 +48,6 @@
           <div class="product-list-action">
             <span class="product-price">${{ product.price }}</span>
             <p-button icon="pi pi-shopping-cart" label="Add to Cart"></p-button>
-          </div>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template let-product pTemplate="gridItem">
-      <div class="col-12 md:col-4">
-        <div class="product-grid-item card">
-          <div class="product-grid-item-top">
-            <div>
-              <i class="pi pi-tag product-category-icon"></i>
-              <span class="product-category">{{ product.category }}</span>
-            </div>
-          </div>
-          <div class="product-grid-item-content">
-            <img [src]="product.image" [alt]="product.title" />
-            <div class="product-name">{{ product.title }}</div>
-            <div class="product-description">{{ product.description }}</div>
-            <p-rating
-              [ngModel]="product.rating"
-              [readonly]="true"
-              [cancel]="false"
-            ></p-rating>
-          </div>
-          <div class="product-grid-item-bottom">
-            <span class="product-price">${{ product.price }}</span>
-            <p-button icon="pi pi-shopping-cart"></p-button>
           </div>
         </div>
       </div>

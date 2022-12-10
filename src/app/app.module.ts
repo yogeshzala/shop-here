@@ -18,10 +18,6 @@ import { DataViewModule } from 'primeng/dataview';
 import { DropdownModule } from 'primeng/dropdown';
 import { RatingModule } from 'primeng/rating';
 import { FormsModule } from '@angular/forms';
-import { PanelModule } from 'primeng/panel';
-import { DialogModule } from 'primeng/dialog';
-import { RippleModule } from 'primeng/ripple';
-import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -44,10 +40,6 @@ import { CardModule } from 'primeng/card';
     DropdownModule,
     RatingModule,
     FormsModule,
-    PanelModule,
-    DialogModule,
-    RippleModule,
-    CardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
