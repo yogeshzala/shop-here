@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductsService } from './products.service';
 import { AppComponent } from '../app.component';
 import { SelectItem } from 'primeng/api';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-products',
@@ -18,7 +19,8 @@ export class ProductsComponent implements OnInit {
 
   constructor(
     private productsService: ProductsService,
-    private appComponent: AppComponent
+    private appComponent: AppComponent,
+    private messageService: MessageService
   ) {
     this.appComponent.loading(true);
   }
@@ -34,10 +36,14 @@ export class ProductsComponent implements OnInit {
   async getProducts() {
     try {
       this.products = await this.productsService.getProducts();
-      console.log(this.products);
       this.appComponent.loading(false);
     } catch (error) {
-      console.log(error);
+      this.appComponent.loading(false);
+      this.messageService.add({
+        severity: 'error',
+        summary: 'Error',
+        detail: 'Network error.',
+      });
     }
   }
 

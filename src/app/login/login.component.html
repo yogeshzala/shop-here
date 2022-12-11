@@ -1,15 +1,35 @@
 <div class="login">
   <div class="col-12 flex align-items-center justify-content-center">
     <div class="p-fluid">
-      <div class="field">
-        <label for="username">Username</label>
-        <input pInputText id="username" type="text" />
-      </div>
-      <div class="field">
-        <label for="password">Password</label>
-        <input pInputText id="password" type="password" />
-      </div>
-      <p-button label="Login"></p-button>
+      <form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
+        <div class="field">
+          <label for="username">Username</label>
+          <input
+            pInputText
+            id="username"
+            type="text"
+            name="username"
+            ngModel
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input
+            pInputText
+            id="password"
+            type="password"
+            name="password"
+            ngModel
+            required
+          />
+        </div>
+        <p-button
+          label="Login"
+          type="submit"
+          [disabled]="!loginForm.valid"
+        ></p-button>
+      </form>
     </div>
   </div>
 </div>

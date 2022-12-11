@@ -19,6 +19,9 @@ import { DropdownModule } from 'primeng/dropdown';
 import { RatingModule } from 'primeng/rating';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { ToastModule } from 'primeng/toast';
+
+import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -42,8 +45,9 @@ import { FooterComponent } from './footer/footer.component';
     DropdownModule,
     RatingModule,
     FormsModule,
+    ToastModule,
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

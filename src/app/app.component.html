@@ -4,7 +4,7 @@
   </div>
   <div [hidden]="isLoading">
     <div>
-      <app-menubar></app-menubar>
+      <app-menubar *ngIf="!isLoading"></app-menubar>
     </div>
     <div>
       <router-outlet></router-outlet>
