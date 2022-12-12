@@ -3,6 +3,8 @@ import { ProductsService } from './products.service';
 import { AppComponent } from '../app.component';
 import { SelectItem } from 'primeng/api';
 import { MessageService } from 'primeng/api';
+import { LoginService } from '../login/login.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-products',
@@ -16,11 +18,14 @@ export class ProductsComponent implements OnInit {
   sortField: string;
   sortKey: string;
   value: string;
+  isLogged: boolean;
+  userSubscription: Subscription;
 
   constructor(
     private productsService: ProductsService,
     private appComponent: AppComponent,
-    private messageService: MessageService
+    private messageService: MessageService,
+    private loginService: LoginService
   ) {
     this.appComponent.loading(true);
   }
@@ -31,6 +36,9 @@ export class ProductsComponent implements OnInit {
       { label: 'Price High to Low', value: '!price' },
       { label: 'Price Low to High', value: 'price' },
     ];
+    this.userSubscription = this.loginService.user.subscribe((user) => {
+      this.isLogged = !!user;
+    });
   }
 
   async getProducts() {
@@ -62,5 +70,21 @@ export class ProductsComponent implements OnInit {
   search(event) {
     this.value = event.value;
     console.log(this.value);
+  }
+
+  onAddtoCart() {
+    if (this.isLogged) {
+      this.messageService.add({
+        severity: 'success',
+        summary: 'Success',
+        detail: 'Added to cart.',
+      });
+    } else {
+      this.messageService.add({
+        severity: 'info',
+        summary: 'Info',
+        detail: 'You need to login first.',
+      });
+    }
   }
 }
