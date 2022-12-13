@@ -19,13 +19,6 @@ export class MenubarComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.userSubscription = this.loginService.user.subscribe((user) => {
       this.isLogged = !!user;
-      if (this.isLogged) {
-        this.messageService.add({
-          severity: 'success',
-          summary: 'Success',
-          detail: 'Login successful.',
-        });
-      }
     });
   }
 

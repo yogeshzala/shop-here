@@ -1,5 +1,3 @@
-<p-toast></p-toast>
-
 <p-dataView
   #dv
   [value]="products"
@@ -11,7 +9,7 @@
   layout="list"
 >
   <ng-template pTemplate="header">
-    <div class="flex flex-column md:flex-row md:justify-content-between">
+    <div class="flex flex-column md:flex-row md:justify-content-between header">
       <p-dropdown
         [options]="sortOptions"
         [(ngModel)]="sortKey"
@@ -48,7 +46,11 @@
         </div>
         <div class="product-list-action">
           <span class="product-price">${{ product.price }}</span>
-          <p-button icon="pi pi-shopping-cart" label="Add to Cart" (click)="onAddtoCart()"></p-button>
+          <p-button
+            icon="pi pi-shopping-cart"
+            label="Add to Cart"
+            (click)="onAddtoCart()"
+          ></p-button>
         </div>
       </div>
     </div>

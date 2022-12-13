@@ -1,6 +1,6 @@
 :host ::ng-deep {
   .p-dropdown {
-    width: 14rem;
+    width: 248px;
     font-weight: normal;
   }
 
@@ -71,6 +71,9 @@
 }
 
 @media screen and (max-width: 576px) {
+  .header {
+    align-items: center;
+  }
   :host ::ng-deep .product-list-item {
     flex-direction: column;
     align-items: center;

@@ -1,10 +1,14 @@
+<p-toast
+  [breakpoints]="{ '576px': { width: '96%', right: '0', left: '2%' } }"
+></p-toast>
+
 <div>
   <div [hidden]="!isLoading">
     <app-loader></app-loader>
   </div>
   <div [hidden]="isLoading">
     <div>
-      <app-menubar *ngIf="!isLoading"></app-menubar>
+      <app-menubar></app-menubar>
     </div>
     <div>
       <router-outlet></router-outlet>

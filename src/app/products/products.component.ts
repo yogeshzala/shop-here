@@ -45,6 +45,13 @@ export class ProductsComponent implements OnInit {
     try {
       this.products = await this.productsService.getProducts();
       this.appComponent.loading(false);
+      if (this.isLogged) {
+        this.messageService.add({
+          severity: 'success',
+          summary: 'Success',
+          detail: 'Login successful.',
+        });
+      }
     } catch (error) {
       this.appComponent.loading(false);
       this.messageService.add({
@@ -73,7 +80,7 @@ export class ProductsComponent implements OnInit {
   }
 
   onAddtoCart() {
-    if (this.isLogged) {
+    if (this.isLogged == true) {
       this.messageService.add({
         severity: 'success',
         summary: 'Success',
