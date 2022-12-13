@@ -2,7 +2,7 @@
 
 <hr>
 
-- Shop Here is a small shopping 🛒 website created 👨🏻‍💻 using [Angular]("https://angular.io/") Framework, [Fake Store]("https://fakestoreapi.com/") Api and [PrimeNg]("https://www.primefaces.org/primeng/") UI Components.
+- Shop Here is a small shopping 🛒 website created 👨🏻‍💻 using [Angular](https://angular.io/) Framework, [Fake Store](https://fakestoreapi.com/) Api and [PrimeNg](https://www.primefaces.org/primeng/) UI Components.
 
 - It contains various features like Sorting 🔃 products high to low and low to high based on price, Searching 🔍 products, Login and Add to cart 🛒.
 
@@ -13,7 +13,7 @@
 
 ## Run Locally
 
-> **_Note:_** [Angular]("https://angular.io/") requires [Node.js]("https://nodejs.org/en/") for all the build and development tools.
+> **_Note:_** [Angular](https://angular.io/) requires [Node.js](https://nodejs.org/en/) for all the build and development tools.
 
 Install the Angular CLI 
 ```bash
@@ -37,7 +37,7 @@ Run the project
 
 ## Link
 
-Try it yourself [Click Here]("")
+Try it yourself [Click Here]()
 
 <hr>
 
