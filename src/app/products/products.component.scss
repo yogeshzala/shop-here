@@ -1,7 +1,11 @@
 :host ::ng-deep {
   .p-dropdown {
-    width: 15.5rem;
+    width: 18rem;
     font-weight: normal;
+  }
+
+  .p-inputtext {
+    width: 18rem;
   }
 
   .product-name {
@@ -74,6 +78,7 @@
   .header {
     align-items: center;
   }
+
   :host ::ng-deep .product-list-item {
     flex-direction: column;
     align-items: center;
