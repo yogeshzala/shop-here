@@ -76,7 +76,6 @@ export class ProductsComponent implements OnInit {
 
   search(event) {
     this.value = event.value;
-    console.log(this.value);
   }
 
   onAddtoCart() {

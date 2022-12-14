@@ -30,6 +30,11 @@ Go to the project directory
   cd shop-here
 ```
 
+Install Node Modules
+```bash
+  npm install
+```
+
 Run the project
 ```bash
   ng serve --open
@@ -37,7 +42,7 @@ Run the project
 
 ## Link
 
-Try it yourself [Click Here]()
+Try it yourself [Click Here](https://shophere.yogeshzala.vercel.app/)
 
 <hr>
 

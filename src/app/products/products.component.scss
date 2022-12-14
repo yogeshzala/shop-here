@@ -74,6 +74,10 @@
   .header {
     align-items: center;
   }
+  .p-dropdown {
+    width: 248px;
+    font-weight: normal;
+  }
   :host ::ng-deep .product-list-item {
     flex-direction: column;
     align-items: center;
