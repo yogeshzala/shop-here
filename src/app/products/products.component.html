@@ -3,6 +3,9 @@
   [value]="products"
   [paginator]="true"
   [rows]="4"
+  [pageLinks]="2"
+  [showCurrentPageReport]="true"
+  [showFirstLastIcon]="false"
   filterBy="title"
   [sortField]="sortField"
   [sortOrder]="sortOrder"
@@ -56,3 +59,7 @@
     </div>
   </ng-template>
 </p-dataView>
+
+<div>
+  <app-footer></app-footer>
+</div>

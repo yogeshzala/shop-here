@@ -1,9 +1,17 @@
 .login {
-  padding: 10% 0 10% 0;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 278.84px;
+  width: 330px;
 }
 
-@media screen and (max-width: 576px) {
-  .login {
-    padding: 30% 0 30% 0;
-  }
+.footer {
+  position: fixed;
+  bottom: 0.50rem;
+  width: calc(100% - 1rem);
 }
+
