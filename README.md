@@ -6,36 +6,36 @@
 
 - It contains various features like Sorting 🔃 products high to low and low to high based on price, Searching 🔍 products, Login and Add to cart 🛒.
 
-## Quick View
-#
-#
-#
-
 ## Run Locally
 
 > **_Note:_** [Angular](https://angular.io/) requires [Node.js](https://nodejs.org/en/) for all the build and development tools.
 
-Install the Angular CLI 
+Install the Angular CLI
+
 ```bash
   npm install -g @angular/cli
 ```
 
 Clone the project
+
 ```bash
   git clone https://github.com/yogeshzala/shop-here.git
 ```
 
 Go to the project directory
+
 ```bash
   cd shop-here
 ```
 
 Install Node Modules
+
 ```bash
   npm install
 ```
 
 Run the project
+
 ```bash
   ng serve --open
 ```

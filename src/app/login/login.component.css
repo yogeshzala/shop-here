@@ -5,22 +5,32 @@
   left: 0;
   bottom: 0;
   right: 0;
-  height: 278.84px;
+  height: 247.84px;
   width: 330px;
 }
 
-.footer {
+.fixed-footer {
   position: fixed;
   bottom: 0.5rem;
   width: calc(100% - 1rem);
+}
+
+.footer {
+  display: none;
 }
 
 @media screen and (max-height: 460px) {
   .login {
     position: relative;
   }
+  .fixed-footer {
+    display: none;
+  }
+  .footer {
+    margin-top: 40px;
+    display: block;
+  }
   .p-fluid {
-    margin-top: 10px;
-    margin-bottom: 100px;
+    margin-top: 20px;
   }
 }
