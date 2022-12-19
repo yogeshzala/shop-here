@@ -1,4 +1,4 @@
-<img src="src/assets/logo.png" width=300>
+<img src="src/assets/readme-logo.png" width=980>
 
 <hr>
 
