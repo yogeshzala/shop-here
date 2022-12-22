@@ -12,6 +12,16 @@
   layout="list"
 >
   <ng-template pTemplate="header">
+    <i
+      class="pi pi-sun theme-icon"
+      *ngIf="blackTheme"
+      (click)="onThemeChange('white')"
+    ></i>
+    <i
+      class="pi pi-moon theme-icon"
+      *ngIf="whiteTheme"
+      (click)="onThemeChange('black')"
+    ></i>
     <div class="flex flex-column md:flex-row md:justify-content-between header">
       <p-dropdown
         [options]="sortOptions"

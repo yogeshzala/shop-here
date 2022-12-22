@@ -5,6 +5,7 @@ import { SelectItem } from 'primeng/api';
 import { MessageService } from 'primeng/api';
 import { LoginService } from '../login/login.service';
 import { Subscription } from 'rxjs';
+import { ThemeService } from '../theme/theme.service';
 
 @Component({
   selector: 'app-products',
@@ -21,11 +22,15 @@ export class ProductsComponent implements OnInit {
   isLogged: boolean;
   userSubscription: Subscription;
 
+  whiteTheme = this.themeService.whiteTheme;
+  blackTheme = this.themeService.blackTheme;
+
   constructor(
     private productsService: ProductsService,
     private appComponent: AppComponent,
     private messageService: MessageService,
-    private loginService: LoginService
+    private loginService: LoginService,
+    private themeService: ThemeService
   ) {
     this.appComponent.loading(true);
   }
@@ -92,5 +97,11 @@ export class ProductsComponent implements OnInit {
         detail: 'You need to login first.',
       });
     }
+  }
+
+  onThemeChange(theme: string) {
+    this.themeService.onThemeChange(theme);
+    this.whiteTheme = this.themeService.whiteTheme;
+    this.blackTheme = this.themeService.blackTheme;
   }
 }

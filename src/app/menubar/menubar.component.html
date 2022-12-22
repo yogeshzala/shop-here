@@ -1,6 +1,17 @@
 <p-menubar>
   <ng-template pTemplate="start">
-    <img src="assets/logo.png" height="40" routerLink="/" />
+    <img
+      src="assets/white-logo.png"
+      height="40"
+      routerLink="/"
+      *ngIf="blackTheme"
+    />
+    <img
+      src="assets/black-logo.png"
+      height="40"
+      routerLink="/"
+      *ngIf="whiteTheme"
+    />
   </ng-template>
   <ng-template pTemplate="end">
     <button
