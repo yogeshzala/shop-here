@@ -4,7 +4,7 @@
 
 - Shop Here is a small shopping 🛒 website created 👨🏻‍💻 using [Angular](https://angular.io/) Framework, [Fake Store](https://fakestoreapi.com/) Api and [PrimeNg](https://www.primefaces.org/primeng/) UI Components.
 
-- It contains various features like Sorting 🔃 products high to low and low to high based on price, Searching 🔍 products, Login and Add to cart 🛒.
+- It contains various features like Sorting 🔃 products based on price, Searching 🔍 products, Login and Switch between light ⚪ and dark ⚫ theme.
 
 ## Run Locally
 

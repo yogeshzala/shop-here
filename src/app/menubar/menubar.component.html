@@ -2,15 +2,15 @@
   <ng-template pTemplate="start">
     <img
       src="assets/white-logo.png"
-      height="40"
       routerLink="/"
       *ngIf="blackTheme"
+      class="logo"
     />
     <img
       src="assets/black-logo.png"
-      height="40"
       routerLink="/"
       *ngIf="whiteTheme"
+      class="logo"
     />
   </ng-template>
   <ng-template pTemplate="end">
@@ -18,7 +18,7 @@
       pButton
       type="button"
       label="Login"
-      class="p-button-info"
+      class="p-button-primary"
       icon="pi pi-sign-in"
       routerLink="/login"
       *ngIf="!isLogged"
@@ -27,7 +27,7 @@
       pButton
       type="button"
       label="Logout"
-      class="p-button-info"
+      class="p-button-primary"
       icon="pi pi-sign-out"
       (click)="onLogout()"
       *ngIf="isLogged"
