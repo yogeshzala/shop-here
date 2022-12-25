@@ -9240,3 +9240,7 @@ p-multiselect.ng-dirty.ng-invalid .p-multiselect:not(.p-disabled).p-focus {
   background: #cae6fc;
   border-color: #cae6fc;
 }
+
+body {
+  background-color: #ffffff;
+}

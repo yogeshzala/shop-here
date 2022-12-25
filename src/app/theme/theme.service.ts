@@ -19,13 +19,11 @@ export class ThemeService {
       themeLink.href = 'md-light.css';
       this.whiteTheme = true;
       this.blackTheme = false;
-      document.body.style.backgroundColor = '#FFFFFF';
     }
     if (theme == 'black') {
       themeLink.href = 'md-dark.css';
       this.whiteTheme = false;
       this.blackTheme = true;
-      document.body.style.backgroundColor = '#1E1E1E';
     }
     this.themeSubject.next(null);
   }
