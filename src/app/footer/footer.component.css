@@ -7,16 +7,6 @@
   padding: 27px 0 27px 0;
 }
 
-.blackTheme {
-  color: rgba(255, 255, 255, 0.87);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.whiteTheme {
-  color: rgba(0, 0, 0, 0.87);
-  border: 1px solid #e5e5e5;
-}
-
 .icon {
   width: 25px;
   margin-bottom: -6px;

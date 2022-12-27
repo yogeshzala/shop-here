@@ -9241,6 +9241,11 @@ p-multiselect.ng-dirty.ng-invalid .p-multiselect:not(.p-disabled).p-focus {
   border-color: #cae6fc;
 }
 
+.whiteTheme {
+  color: rgba(0, 0, 0, 0.87);
+  border: 1px solid #e5e5e5;
+}
+
 body {
   background-color: #ffffff;
 }
