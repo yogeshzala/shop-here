@@ -42,7 +42,7 @@ Run the project
 
 ## Link
 
-Try it yourself [Click Here](https://shophere.yogeshzala.vercel.app/)
+Try it yourself [Click Here](https://shophereapp.vercel.app/)
 
 <hr>
 
